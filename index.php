@@ -1,7 +1,7 @@
 <!-- <pre> -->
 <?php
 
-if (isset($_REQUEST['search'])) {
+if (isset($_REQUEST['search']) && !empty($_REQUEST['srchdata'])) {
     $srchData = $_REQUEST['srchdata'];
 
     $curl = curl_init();
